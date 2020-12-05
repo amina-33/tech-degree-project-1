@@ -1,13 +1,13 @@
 /* Global Layout Set-up */
-* { 
+* {
   box-sizing: border-box;
 }
-  
+
 body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   color: #222;
   background: white;
 }
@@ -19,7 +19,7 @@ a.in-text-link {
 }
 
 a.in-text-link:hover {
-  color: rgb(230, 180, 180)
+  color: rgb(230, 180, 180);
 }
 
 /* Section Styles */
@@ -31,7 +31,7 @@ a.in-text-link:hover {
   position: absolute;
   top: 0;
   text-align: center;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 .nav {
   display: flex;
@@ -45,12 +45,12 @@ a.in-text-link:hover {
 }
 
 .name {
-    display: block;
-    align-items: center;
-    color: rgb(54, 17, 17);
-    font-weight: 900;
-    font-size: 150%;
-    margin-top: 0mm;
+  display: block;
+  align-items: center;
+  color: rgb(54, 17, 17);
+  font-weight: 900;
+  font-size: 150%;
+  margin-top: 0mm;
 }
 .nav li {
   padding: 5px 10px 10px 10px;
@@ -61,18 +61,18 @@ a.in-text-link:hover {
   display: inline-block;
 }
 .nav a:hover {
-  color: rgb(230, 180, 180)
+  color: rgb(230, 180, 180);
 }
 
 header {
   text-align: center;
-  background: url('images/Beirut.JPG') no-repeat top center;
+  background: url("images/Beirut.JPG") no-repeat top center;
   background-size: cover;
   overflow: visible;
   position: relative;
   top: 120px;
   padding-top: 60px;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 header {
   line-height: 1.3;
@@ -83,13 +83,13 @@ header {
   height: 150px;
   border-radius: 50%;
   border: 2px solid rgb(59, 58, 58);
-  transition: all .5s;
+  transition: all 0.5s;
   position: relative;
   top: 30px;
-} 
+}
 
 .header-name {
-  color:  rgb(24, 24, 22);
+  color: rgb(24, 24, 22);
   font-weight: 500;
   position: relative;
   top: 10px;
@@ -102,7 +102,7 @@ header {
 }
 
 .card {
-  Top: 90px;
+  top: 90px;
   margin: 50px;
   padding: 10px 40px 40px;
   max-width: 500px;
@@ -113,7 +113,7 @@ header {
   border-bottom: 2px solid rgb(129, 129, 129);
   border-top: 2px solid rgb(129, 129, 129);
   border-radius: 6px;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 .card:hover {
   border-color: rgb(230, 180, 180);
@@ -138,7 +138,7 @@ header {
   height: 25px;
   position: absolute;
   top: 5px;
-  left: 10px
+  left: 10px;
 }
 
 ul.skills {
@@ -163,11 +163,11 @@ ul.skills {
   background: rgb(255, 255, 255);
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .CV-card:hover {
-  border-color:  rgb(230, 180, 180);
+  border-color: rgb(230, 180, 180);
 }
 
 .hobbies-card {
@@ -179,12 +179,12 @@ ul.skills {
   background: rgb(255, 255, 255);
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
-  transition: all .5s;
+  transition: all 0.5s;
   height: 500px;
 }
 
 .hobbies-card:hover {
-  border-color:  rgb(230, 180, 180);
+  border-color: rgb(230, 180, 180);
 }
 
 .horse,
@@ -210,7 +210,7 @@ footer {
 }
 
 .copyright {
-  font-size: .75em;
+  font-size: 0.75em;
 }
 
 footer ul {
@@ -230,8 +230,8 @@ a.social {
   width: 30px;
   height: 30px;
   background-size: 30px 30px;
-  opacity: .4;
-  transition: all .5s;
+  opacity: 0.4;
+  transition: all 0.5s;
 }
 
 a.linkedin {
@@ -249,14 +249,13 @@ a.social:hover {
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
-  
   .flex {
-      display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex; 
-      max-width: 1200px;
-      -ms-flex-pack: distribute;
-      justify-content: space-around;
-      margin: 0 auto;
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: flex;
+    max-width: 1200px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 0 auto;
   }
 
   header {
@@ -267,7 +266,6 @@ a.social:hover {
     max-width: 1200px;
     padding: 0 30px;
   }
-
 
   main {
     padding-top: 20px;
@@ -282,6 +280,4 @@ a.social:hover {
     max-width: 1200px;
     margin: 40px auto;
   }
-
 }
-
