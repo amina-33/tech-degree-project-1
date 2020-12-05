@@ -9,58 +9,70 @@ body {
   text-align: center;
   font-family: 'Georgia', serif;
   color: #222;
-  background: #d8d8d8;
+  background: white;
 }
 /* Link Styles */
 
-a {
-  text-decoration: none;
-  color: #999;
+a.in-text-link {
+  text-decoration: underline;
+  color: inherit;
 }
-a:hover {
-  color: #6633ff;
+
+a.in-text-link:hover {
+  color: rgb(230, 180, 180)
 }
 
 /* Section Styles */
 
 .main-nav {
   width: 100%;
-  background: black;
   min-height: 30px;
   padding: 10px;
-  position: fixed;
+  position: absolute;
+  top: 0;
   text-align: center;
+  transition: all .5s;
 }
 .nav {
   display: flex;
   justify-content: space-around;
-  font-weight: 700;
+  font-weight: 500;
+  font-size: 80%;
   list-style-type: none;
-  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 0px;
   padding: 0;
 }
 
-.nav .name {
+.name {
     display: block;
-    margin-right: auto;
-    color: white;
+    align-items: center;
+    color: rgb(54, 17, 17);
+    font-weight: 900;
+    font-size: 150%;
+    margin-top: 0mm;
 }
 .nav li {
   padding: 5px 10px 10px 10px;
 }
 .nav a {
-  transition: all .5s;
+  color: rgb(24, 24, 22);
+  text-decoration: none;
+  display: inline-block;
 }
 .nav a:hover {
-  color: white
+  color: rgb(230, 180, 180)
 }
 
 header {
   text-align: center;
-  background: url('images/Beirut.JPG') no-repeat top center ;
+  background: url('images/Beirut.JPG') no-repeat top center;
   background-size: cover;
   overflow: visible;
+  position: relative;
+  top: 120px;
   padding-top: 60px;
+  transition: all .5s;
 }
 header {
   line-height: 1.3;
@@ -78,28 +90,55 @@ header {
 
 .header-name {
   color:  rgb(24, 24, 22);
+  font-weight: 500;
   position: relative;
-  bottom: 2px;
+  top: 10px;
 }
 
 .header-location {
   color: rgb(24, 24, 22);
   position: relative;
-  bottom: 20px;
+  top: 5px;
 }
 
 .card {
-  margin: 30px;
+  Top: 90px;
+  margin: 50px;
   padding: 10px 40px 40px;
   max-width: 500px;
+  position: relative;
   text-align: left;
-  background: rgb(255, 255, 255);
-  border-bottom: 4px solid #ccc;
+  color: rgb(58, 58, 58);
+  background: white;
+  border-bottom: 2px solid rgb(129, 129, 129);
+  border-top: 2px solid rgb(129, 129, 129);
   border-radius: 6px;
   transition: all .5s;
 }
 .card:hover {
-  border-color: #1776cf;
+  border-color: rgb(230, 180, 180);
+}
+
+.front-h2 {
+  text-align: center;
+  font-size: 150%;
+  color: rgb(54, 17, 17);
+}
+
+.flag-leb {
+  width: 50px;
+  height: 25px;
+  position: absolute;
+  top: 35px;
+  left: 10px;
+}
+
+.flag-scot {
+  width: 50px;
+  height: 25px;
+  position: absolute;
+  top: 5px;
+  left: 10px
 }
 
 ul.skills {
@@ -112,22 +151,65 @@ ul.skills {
   display: inline-block;
   background: #528dd1;
   color: white;
-  padding: 5px 10px;
+  padding: 5px 5px;
   margin: 2px;
 }
+.CV-card {
+  top: 100px;
+  position: relative;
+  margin: 30px;
+  padding: 10px 40px 40px;
+  text-align: left;
+  background: rgb(255, 255, 255);
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
 
-.skills li:nth-child(odd) {
-  background: #144b70;
+.CV-card:hover {
+  border-color:  rgb(230, 180, 180);
+}
+
+.hobbies-card {
+  top: 100px;
+  position: relative;
+  margin: 30px;
+  padding: 10px 40px 40px;
+  text-align: left;
+  background: rgb(255, 255, 255);
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+  height: 500px;
+}
+
+.hobbies-card:hover {
+  border-color:  rgb(230, 180, 180);
+}
+
+.horse,
+.lola-1,
+.lola-2,
+.lola-3,
+.lola-4,
+.lola-5 {
+  width: 180px;
+  height: 220px;
+  vertical-align: top;
+  display: inline-block;
+  position: relative;
+  top: 50px;
 }
 
 footer {
   width: 100%;
   min-height: 30px;
   padding: 20px 0 40px 20px;
+  position: relative;
+  top: 100px;
 }
 
-footer .copyright {
-  top: -8px;
+.copyright {
   font-size: .75em;
 }
 
